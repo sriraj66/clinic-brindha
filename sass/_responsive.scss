@@ -199,6 +199,21 @@
 
     .footer__logo {
         margin-bottom: 30px;
+        justify-content: center;
+    }
+
+    .footer__nav {
+        margin-bottom: 25px;
+    }
+
+    .footer__nav ul {
+        justify-content: center;
+        gap: 10px 20px;
+    }
+
+    .footer__book {
+        text-align: center;
+        margin-top: 20px;
     }
 
     .footer__newslatter {
@@ -207,6 +222,19 @@
 
     .footer__social {
         text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer__widget {
+        margin-bottom: 40px;
+    }
+
+    .footer__address {
+        margin-bottom: 40px;
+    }
+
+    .footer__map {
+        margin-bottom: 40px;
     }
 
     .footer__copyright__text p {
@@ -216,6 +244,12 @@
 
     .footer__copyright ul {
         text-align: center;
+        padding: 0;
+    }
+
+    .footer__copyright ul li {
+        display: inline-block;
+        margin: 0 10px;
     }
 
     .services__item {
@@ -430,6 +464,25 @@
     .footer__logo {
         margin-bottom: 30px;
         text-align: center;
+        justify-content: center;
+    }
+
+    .footer__nav {
+        margin-bottom: 25px;
+    }
+
+    .footer__nav ul {
+        justify-content: center;
+        gap: 8px 15px;
+    }
+
+    .footer__nav ul li a {
+        font-size: 13px;
+    }
+
+    .footer__book {
+        text-align: center;
+        margin-top: 20px;
     }
 
     .footer__newslatter {
@@ -438,6 +491,25 @@
 
     .footer__social {
         text-align: center;
+        margin-bottom: 15px;
+    }
+
+    .footer__social a {
+        margin-right: 8px;
+    }
+
+    .footer__widget {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .footer__address {
+        margin-bottom: 40px;
+        text-align: left;
+    }
+
+    .footer__map {
+        margin-bottom: 40px;
     }
 
     .footer__copyright__text p {
@@ -447,6 +519,12 @@
 
     .footer__copyright ul {
         text-align: center;
+        padding: 0;
+    }
+
+    .footer__copyright ul li {
+        display: inline-block;
+        margin: 0 8px 5px;
     }
 
     .about__video {

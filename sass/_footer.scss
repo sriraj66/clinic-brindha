@@ -4,18 +4,37 @@
 .footer {
   background: #121c1d;
   padding-top: 40px;
+
+  @media only screen and (max-width: 767px) {
+    padding-top: 30px;
+  }
 }
 
 .footer__top {
   padding-bottom: 40px;
   border-bottom: 1px solid rgba(255, 255, 255, 0.1);
   margin-bottom: 65px;
+
+  @media only screen and (max-width: 991px) {
+    padding-bottom: 30px;
+    margin-bottom: 40px;
+  }
+
+  @media only screen and (max-width: 767px) {
+    padding-bottom: 25px;
+    margin-bottom: 30px;
+  }
 }
 
 .footer__logo {
   display: flex;
   align-items: center;
   height: 100%;
+
+  @media only screen and (max-width: 991px) {
+    justify-content: center;
+    margin-bottom: 25px;
+  }
 
   a {
     display: inline-block;
@@ -24,6 +43,11 @@
       width: 96px;
       height: 128px;
       object-fit: contain;
+
+      @media only screen and (max-width: 767px) {
+        width: 80px;
+        height: 106px;
+      }
     }
   }
 }
@@ -36,7 +60,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    gap: 0 30px;
+    gap: 10px 30px;
 
     li {
       a {
@@ -46,6 +70,8 @@
         text-transform: uppercase;
         letter-spacing: 0.5px;
         @include transition(all, .3s);
+        display: inline-block;
+        padding: 5px 0;
 
         &:hover {
           color: $primary-color;
@@ -58,6 +84,10 @@
 .footer__book {
   margin-top: 15px;
   text-align: right;
+
+  @media only screen and (max-width: 991px) {
+    text-align: center;
+  }
 
   .primary-btn {
     display: inline-block;
@@ -108,6 +138,11 @@
   text-align: right;
   margin-bottom: 0;
 
+  @media only screen and (max-width: 991px) {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
   a {
     display: inline-block;
     height: 50px;
@@ -119,9 +154,15 @@
     text-align: center;
     border-radius: 50%;
     margin-right: 6px;
+    @include transition(all, .3s);
 
     &:last-child {
       margin-right: 0;
+    }
+
+    &:hover {
+      background: $primary-color;
+      transform: translateY(-3px);
     }
   }
 }
@@ -203,6 +244,11 @@
   ul {
     text-align: right;
 
+    @media only screen and (max-width: 991px) {
+      text-align: center;
+      padding: 0;
+    }
+
     li {
       list-style: none;
       display: inline-block;
@@ -211,6 +257,11 @@
       margin-right: 25px;
       font-weight: 300;
       position: relative;
+
+      @media only screen and (max-width: 767px) {
+        margin: 0 10px 5px;
+        font-size: 13px;
+      }
 
       &:after {
         position: absolute;
@@ -221,6 +272,10 @@
         background: #c4c4c4;
         content: "";
         border-radius: 50%;
+
+        @media only screen and (max-width: 767px) {
+          display: none;
+        }
       }
 
       &:last-child {
@@ -241,6 +296,11 @@
     color: #c4c4c4;
     font-weight: 300;
     margin-bottom: 0;
+
+    @media only screen and (max-width: 991px) {
+      text-align: center;
+      margin-bottom: 15px;
+    }
 
     i {
       color: $primary-color;
