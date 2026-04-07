@@ -32,18 +32,9 @@
 @media only screen and (min-width: 768px) and (max-width: 991px) {
     .canvas__open {
         display: block;
-        font-size: 22px;
-        color: #222;
-        height: 35px;
-        width: 35px;
-        line-height: 35px;
-        text-align: center;
-        border: 1px solid #323232;
-        border-radius: 2px;
-        cursor: pointer;
         position: absolute;
         right: 15px;
-        top: 35px;
+        top: 32px;
     }
 
     .offcanvas-menu-overlay {
@@ -140,6 +131,13 @@
 
     .offcanvas__btn {
         margin-bottom: 30px;
+
+        .primary-btn {
+            font-size: 12px;
+            padding: 10px 20px 9px;
+            letter-spacing: 1px;
+            white-space: nowrap;
+        }
     }
 
     .offcanvas__widget {
@@ -214,6 +212,9 @@
     .footer__book {
         text-align: center;
         margin-top: 20px;
+        a {
+            font-size: small;
+        }
     }
 
     .footer__newslatter {
@@ -296,18 +297,9 @@
 @media only screen and (max-width: 767px) {
     .canvas__open {
         display: block;
-        font-size: 22px;
-        color: #222;
-        height: 35px;
-        width: 35px;
-        line-height: 35px;
-        text-align: center;
-        border: 1px solid #323232;
-        border-radius: 2px;
-        cursor: pointer;
         position: absolute;
         right: 15px;
-        top: 35px;
+        top: 32px;
     }
 
     .offcanvas-menu-overlay {
@@ -404,6 +396,13 @@
 
     .offcanvas__btn {
         margin-bottom: 30px;
+
+        .primary-btn {
+            font-size: 11px;
+            padding: 8px 16px 7px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+        }
     }
 
     .offcanvas__widget {
@@ -483,6 +482,9 @@
     .footer__book {
         text-align: center;
         margin-top: 20px;
+        a {
+            font-size: small;
+        }
     }
 
     .footer__newslatter {

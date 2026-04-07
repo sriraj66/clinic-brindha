@@ -71,13 +71,17 @@
     display: flex;
     align-items: center;
     height: 100%;
-    padding: 8px 0;
+    padding: 12px 4px;
 
     a {
         display: inline-block;
 
+        &:first-child {
+            margin-right: 10px;
+        }
+
         img {
-            height: 75px;
+            height: 70px;
         }
     }
 }
@@ -201,4 +205,59 @@
 
 .canvas__open {
     display: none;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    background: $white-color;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    @include transition(all, .3s);
+
+    &:hover {
+        background: $primary-color;
+        box-shadow: 0 3px 12px rgba(219, 11, 135, 0.3);
+
+        span,
+        span::before,
+        span::after {
+            background: $white-color;
+        }
+    }
+
+    span {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 22px;
+        height: 2px;
+        background: $heading-color;
+        border-radius: 2px;
+        @include transition(all, .3s);
+
+        &::before,
+        &::after {
+            content: '';
+            position: absolute;
+            width: 22px;
+            height: 2px;
+            background: $heading-color;
+            border-radius: 2px;
+            @include transition(all, .3s);
+        }
+
+        &::before {
+            top: -7px;
+        }
+
+        &::after {
+            top: 7px;
+        }
+    }
+
+    &:active {
+        transform: scale(0.95);
+    }
 }
